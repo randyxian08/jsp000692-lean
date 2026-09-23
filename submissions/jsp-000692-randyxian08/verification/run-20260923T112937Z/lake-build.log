@@ -1,0 +1,55 @@
+⚠ [8924/8933] Replayed JSP692.Hypergraph
+warning: JSP692/Hypergraph.lean:35:0: automatically included section variable(s) unused in theorem `JSP692.not_proper_of_mono`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8925/8933] Replayed JSP692.SplitGadget
+warning: JSP692/SplitGadget.lean:55:0: automatically included section variable(s) unused in theorem `JSP692.mono_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/SplitGadget.lean:63:0: automatically included section variable(s) unused in theorem `JSP692.mono_insert_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8926/8933] Replayed JSP692.AlonCore
+warning: JSP692/AlonCore.lean:15:0: automatically included section variable(s) unused in theorem `JSP692.coreObstructs_of_balanced_splits`:
+  [DecidableEq Y]
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Y] [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/AlonCore.lean:98:0: automatically included section variable(s) unused in theorem `JSP692.liftCore_card`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8928/8933] Replayed JSP692.Relabel
+warning: JSP692/Relabel.lean:13:0: automatically included section variable(s) unused in theorem `JSP692.uniform_relabel`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/Relabel.lean:29:0: automatically included section variable(s) unused in theorem `JSP692.proper_relabel_iff`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8930/8933] Replayed JSP692.LinearIntersection
+warning: JSP692/LinearIntersection.lean:107:0: automatically included section variable(s) unused in theorem `JSP692.edge_disjoint_of_independent`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (8933 jobs).

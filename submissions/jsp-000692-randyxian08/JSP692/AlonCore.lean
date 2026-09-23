@@ -103,7 +103,7 @@ lemma liftCore_card (s : Finset X) : (liftCore (Y := Y) s).card = s.card := by
 lemma insert_liftCore_card (s : Finset X) (y : Y) :
     (insert (Sum.inr y) (liftCore (Y := Y) s)).card = s.card + 1 := by
   have hy : Sum.inr y ∉ liftCore (Y := Y) s := by simp [liftCore]
-  rw [Finset.card_insert_of_not_mem hy, liftCore_card]
+  rw [Finset.card_insert_of_notMem hy, liftCore_card]
 
 theorem graph_uniform (d : SplitGadget X Y) (r : ℕ)
     (hcore : ∀ e ∈ d.core, e.card = r)

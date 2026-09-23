@@ -37,7 +37,7 @@ theorem selectedHalf_card (m : ℕ) (b : Fin m → Bool) :
   have hinj : Function.Injective (fun i : Fin m => (some i, b i)) := by
     intro i j hij
     exact Option.some.inj (congrArg Prod.fst hij)
-  rw [selectedHalf, Finset.card_insert_of_not_mem hn,
+  rw [selectedHalf, Finset.card_insert_of_notMem hn,
     Finset.card_image_of_injective _ hinj]
   simp
 

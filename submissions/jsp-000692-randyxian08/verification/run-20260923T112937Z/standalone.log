@@ -1,0 +1,116 @@
+JSP000692.lean:43:0: warning: automatically included section variable(s) unused in theorem `JSP692.not_proper_of_mono`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:177:0: warning: automatically included section variable(s) unused in theorem `JSP692.mono_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:185:0: warning: automatically included section variable(s) unused in theorem `JSP692.mono_insert_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:229:0: warning: automatically included section variable(s) unused in theorem `JSP692.coreObstructs_of_balanced_splits`:
+  [DecidableEq Y]
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Y] [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:312:0: warning: automatically included section variable(s) unused in theorem `JSP692.liftCore_card`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:577:0: warning: automatically included section variable(s) unused in theorem `JSP692.uniform_relabel`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:593:0: warning: automatically included section variable(s) unused in theorem `JSP692.proper_relabel_iff`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:909:0: warning: automatically included section variable(s) unused in theorem `JSP692.edge_disjoint_of_independent`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'JSP692.not_proper_of_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.transversal_contains_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeColorable_of_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.leftEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rightEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_insert_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.not_twoColorable_of_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreObstructs_of_balanced_splits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_not_twoColorable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.insert_liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.graph_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.inl_mem_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersect_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_complement_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_edge_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_right_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.uniform_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersecting_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.proper_relabel_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeChromatic_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.support_relabel_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_core_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_contains_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_labels_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_vertex_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_for_every_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.cubic_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_exceeds_every_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.square_matrix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.exists_maximal_only_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_disjoint_of_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_meets_only_set_at_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rank_le_twice_intersection_bound_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_one_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.quadratic_counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two_assertion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]

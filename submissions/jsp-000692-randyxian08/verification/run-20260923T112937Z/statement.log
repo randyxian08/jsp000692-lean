@@ -1,0 +1,43 @@
+def JSP692.Uniform.{u_1} : {V : Type u_1} → JSP692.Hypergraph V → ℕ → Prop :=
+fun {V} H r => ∀ e ∈ H, e.card = r
+def JSP692.Intersecting.{u_1} : {V : Type u_1} → [DecidableEq V] → JSP692.Hypergraph V → Prop :=
+fun {V} [DecidableEq V] H => ∀ e ∈ H, ∀ f ∈ H, (e ∩ f).Nonempty
+def JSP692.Proper.{u_1, u_2} : {V : Type u_1} → {C : Type u_2} → JSP692.Hypergraph V → (V → C) → Prop :=
+fun {V} {C} H c => ∀ e ∈ H, ∃ u ∈ e, ∃ v ∈ e, c u ≠ c v
+def JSP692.ThreeChromatic.{u_1} : {V : Type u_1} → JSP692.Hypergraph V → Prop :=
+fun {V} H => (∃ c, JSP692.Proper H c) ∧ ¬∃ c, JSP692.Proper H c
+def JSP692.support.{u_1} : {V : Type u_1} → [DecidableEq V] → JSP692.Hypergraph V → Finset V :=
+fun {V} [DecidableEq V] H => Finset.biUnion H id
+def JSP692.QuadraticVertexBound : Prop :=
+∃ C,
+  0 < C ∧
+    ∃ R,
+      ∀ (r : ℕ),
+        2 ≤ r →
+          R ≤ r →
+            ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+              JSP692.Uniform H r →
+                JSP692.ThreeChromatic H → JSP692.Intersecting H → ↑(JSP692.support H).card ≤ C * ↑r ^ 2
+def JSP692.LinearIntersectionAssertion : Prop :=
+∃ C,
+  0 < C ∧
+    ∀ (r : ℕ),
+      2 ≤ r →
+        ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+          JSP692.Uniform H r →
+            JSP692.ThreeChromatic H → JSP692.Intersecting H → ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧ C * ↑r ≤ ↑(e ∩ f).card
+JSP692.jsp000692_complete : ¬JSP692.QuadraticVertexBound ∧ JSP692.LinearIntersectionAssertion
+JSP692.jsp000692_complete_explicit :
+  (∀ (C : ℝ) (R : ℕ),
+      ∃ r,
+        2 ≤ r ∧
+          R ≤ r ∧
+            ∃ n H,
+              JSP692.Uniform H r ∧
+                JSP692.ThreeChromatic H ∧
+                  JSP692.Intersecting H ∧ JSP692.support H = Finset.univ ∧ C * ↑r ^ 2 < ↑(JSP692.support H).card) ∧
+    ∀ (r : ℕ),
+      2 ≤ r →
+        ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+          JSP692.Uniform H r →
+            JSP692.ThreeChromatic H → JSP692.Intersecting H → ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧ ↑r / 3 ≤ ↑(e ∩ f).card

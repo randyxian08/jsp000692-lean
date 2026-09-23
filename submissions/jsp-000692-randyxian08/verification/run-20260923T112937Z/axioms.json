@@ -1,0 +1,337 @@
+{
+  "JSP692.not_proper_of_mono": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.transversal_contains_edge": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.threeColorable_of_intersecting": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.coreEdge_mem": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.leftEdge_mem": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.rightEdge_mem": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.mono_liftCore": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.mono_insert_liftCore": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.not_twoColorable_of_coreObstructs": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.coreObstructs_of_balanced_splits": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_coreObstructs": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_not_twoColorable": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.liftCore_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.insert_liftCore_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.graph_uniform": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_uniform": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.inl_mem_liftCore": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.intersect_of_core": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_complement_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_edge_cases": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_core_core": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_core_left": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_core_right": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_left_left": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_left_right": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_right_right": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_intersecting": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_threeChromatic": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.canonical_support_eq_univ": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.uniform_relabel": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.intersecting_relabel": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.proper_relabel_iff": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.threeChromatic_relabel": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.support_relabel_eq_univ": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_core_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.selectedHalf_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.selectedHalf_contains_point": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.selectedHalf_injective": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.selectedLabel_injective": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_labels_lower_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_vertex_lower_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_uniform": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_intersecting": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_threeChromatic": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_support_eq_univ": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_uniform": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_intersecting": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_threeChromatic": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_support_eq_univ": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_active_card": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alonFin_active_lower_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_for_every_rank": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.cubic_le_two_pow": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.alon_exceeds_every_quadratic": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.square_matrix_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.exists_maximal_only_edge": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.edge_disjoint_of_independent": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.edge_meets_only_set_at_point": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.rank_le_twice_intersection_bound_add_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.large_intersection_nat": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.large_intersection_one_third": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.jsp000692_question_two": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.quadratic_counterexamples": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.jsp000692_question_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.jsp000692_question_two_assertion": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.jsp000692_complete": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "JSP692.jsp000692_complete_explicit": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

@@ -1,6 +1,6 @@
 # JSP-000692 / Erdős 836: both questions
 
-This submission formalizes both finite-hypergraph questions of [JSP-000692](../../problems/catalog-0601-0700.md#JSP-000692) in Lean 4.19.0. It is submitted for proof, statement, contribution, priority and prize-eligibility review. Related tracking issue: [#50](https://github.com/TheJustinSunPrize/awards/issues/50).
+This project formalizes both finite-hypergraph questions of [JSP-000692](../../problems/catalog-0601-0700.md#JSP-000692) in Lean 4.34.0. The original catalog PR [#95](https://github.com/TheJustinSunPrize/awards/pull/95) was closed without merge; this upgrade does not reverse that decision or establish award eligibility. Related early claim: [#50](https://github.com/TheJustinSunPrize/awards/issues/50), not ready for acceptance.
 
 ## Proved statements
 
@@ -20,20 +20,15 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/finite_checks.py
 ```
 
-Lean is pinned to 4.19.0. Mathlib is pinned to `c44e0c8ee63ca166450922a373c7409c5d26b00b`; all nine dependencies are locked. If an older native cache executable fails to load on macOS, fetch its cache through the Lean interpreter and run without `--prepare`:
-
-```sh
-lake env lean --run .lake/packages/mathlib/Cache/Main.lean get
-python3 scripts/verify.py
-```
+Lean is pinned to 4.34.0. Mathlib is pinned to `5ed2965256430c3649e86755f9576b54eca72435`; all nine dependencies are locked. The earlier Lean 4.19.0 run is preserved under `verification/run-20260916T154622Z/` as historical evidence for the older source version.
 
 The verifier builds all modules, prints and checks all 67 theorem axiom reports, prints the definitions and final theorem types, and independently elaborates the single-file version importing only Mathlib. Modular and standalone declarations intentionally have the same names; do not import both together.
 
 ## Actual evidence and limitations
 
-The [machine receipt](verification/status.json) records the successful local run. The [publication review](verification/publication-review.json) binds the evidence to final source hashes. All 67 audited declarations use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Source scans reject proof placeholders, added axioms and native-computation escapes. Compiler warnings concern unused section variables only.
+The current [machine receipt](verification/status.json) records the Lean 4.34.0 local run and links its logs. The older [publication review](verification/publication-review.json) applies only to the historical Lean 4.19.0 source. All 67 current audited declarations use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Source scans reject proof placeholders, added axioms and native-computation escapes. Compiler warnings concern unused section variables only. A separate `lake env leanchecker JSP692` kernel replay also exited successfully; see [the dated verification note](VERIFICATION-20260923.md).
 
-The original both-question candidate needed one type-inference repair: two occurrences of `liftCore s` in `insert_liftCore_card` became `liftCore (Y := Y) s`. The [exact patch](verification/local-fix.patch) changes no mathematical condition or conclusion. The standalone source was regenerated from the modules. Any NOT COMPILED comments in the source describe the original authoring environment; the current dated run supersedes them.
+The original both-question candidate needed one type-inference repair: two occurrences of `liftCore s` in `insert_liftCore_card` became `liftCore (Y := Y) s`. The [historical patch](verification/local-fix.patch) changes no mathematical condition or conclusion. The 4.34.0 update changes three renamed Finset lemmas in the modular source and regenerates the standalone source from those modules; no target statement is changed. Any NOT COMPILED comments in the source describe the original authoring environment; the current dated run supersedes them.
 
 Finite regression checks and 11 verification-utility tests are supplementary. The proof covers finite hypergraphs, not a separately formalized infinite-family compactness extension. The first answer needs only an exponential lower bound; the exact central-binomial vertex formula and sharp asymptotic count are not formalized.
 

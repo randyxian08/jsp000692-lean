@@ -88,15 +88,15 @@
   "sha256": {
     "JSP692/Hypergraph.lean": "84804dfda7384bf547a3414f1f5c2b774e9ba609427dd35f75915e9b8981c70a",
     "JSP692/SplitGadget.lean": "83073018db082df150e8c3b00b0d037f175369090d02c101e26af69f638393c0",
-    "JSP692/AlonCore.lean": "5a22a2461b96311f53215e31db6cfa94f969d8d370aa3c98de92dde9655bcb3f",
+    "JSP692/AlonCore.lean": "a7e9f636a74a50664fc031ff081097c8a9b2f946168d28d9aae0c2d8da2e8e9c",
     "JSP692/AlonGeometry.lean": "d002e13fffdb5d05e0fdd1e72785676512981f48edcb392afe1b4a5be4e12f9e",
     "JSP692/Relabel.lean": "a19c7c0df4ae417e642db8d109ac3bc779e5380268c7eb1984d4db3bca0e769a",
-    "JSP692/AlonGrowth.lean": "afa66011753e47f707486ead9776dd2318e5823363faa5e410af9f8cbbbbec18",
-    "JSP692/LinearIntersection.lean": "3eaec7016d5b9b14d7c290f0531e12f9031524f2db82ea65e6cf85578e154118",
+    "JSP692/AlonGrowth.lean": "ed85909459e5c97f2d887f6a12e71b5dd18cd3b63203edfa7326887c3ab5b659",
+    "JSP692/LinearIntersection.lean": "0d134797b6adf2c20ddb8012b73369738d689ef15de932134dc78926f8fc7638",
     "JSP692/Complete.lean": "eceda31370e550b9ff3cc98e0f9c6f1b8939a9a4f42aa788d6c667a7bd9e4ae4",
     "JSP692.lean": "618654a156338fc179b51f98599fe2b5aa8fa707a70975f29cdbfc97249dfa7b",
     "Audit.lean": "3d21187f9652d369240a5cc1a6a0b9caf7b0e2fa0ed20a0afb716d16fe33e1a1",
     "Statement.lean": "c3195466624f354c2de06b7d7a7f3e0f2ad52e765ee85c78d3301b34aaaf5152",
-    "JSP000692.lean": "7167cd26d70d6beaeaaac1ecfb33ee49abe9c8b628b56af5cc4d36723f2dbcfa"
+    "JSP000692.lean": "baa70b556a6372d98e2946c9359a28147369ed1792ff3e60d4b3a82bb34f510a"
   }
 }

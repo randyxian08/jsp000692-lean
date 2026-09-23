@@ -21,7 +21,7 @@ from pathlib import Path
 from source_audit import ROOT, audit
 
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
-MATHLIB_COMMIT = "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+MATHLIB_COMMIT = "5ed2965256430c3649e86755f9576b54eca72435"
 
 
 class VerificationError(RuntimeError):
@@ -98,8 +98,13 @@ def main() -> int:
         )
         logfile.write_text(completed.stdout)
         print(completed.stdout, end='' if completed.stdout.endswith('\n') else '\n')
+        public_argv = [
+            str(Path(arg).relative_to(ROOT)) if arg.startswith(str(ROOT) + os.sep)
+            else Path(arg).name if os.path.isabs(arg) else arg
+            for arg in argv
+        ]
         status['commands'].append({
-            'argv': argv, 'exit_code': completed.returncode,
+            'argv': public_argv, 'exit_code': completed.returncode,
             'log': str(logfile.relative_to(ROOT)),
         })
         save()
@@ -126,7 +131,10 @@ def main() -> int:
         if source['status'] != 'PASS':
             raise VerificationError('source-only preflight failed')
         lake = shutil.which('lake')
-        status['runtime_paths'] = {'lake': lake, 'lean': shutil.which('lean')}
+        status['runtime_paths'] = {
+            'lake': Path(lake).name if lake else None,
+            'lean': Path(shutil.which('lean')).name if shutil.which('lean') else None,
+        }
         if not lake:
             status['status'] = 'BLOCKED_NO_LEAN_RUNTIME'
             status['reason'] = 'No lake executable was found; no Lean compilation or axiom audit ran.'
@@ -135,8 +143,8 @@ def main() -> int:
             return 2
         version = run('lean-version', [lake, 'env', 'lean', '--version'])
         status['lean_version_output'] = version.strip()
-        if not re.search(r'\bversion 4\.19\.0\b', version):
-            raise VerificationError('The required compiler is Lean 4.19.0.')
+        if not re.search(r'\bversion 4\.34\.0\b', version):
+            raise VerificationError('The required compiler is Lean 4.34.0.')
         if args.prepare:
             run('mathlib-cache', [lake, 'exe', 'cache', 'get'])
         expected = json.loads((ROOT/'DEPENDENCIES.lock.json').read_text())['packages']

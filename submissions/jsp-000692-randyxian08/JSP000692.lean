@@ -317,7 +317,7 @@ lemma liftCore_card (s : Finset X) : (liftCore (Y := Y) s).card = s.card := by
 lemma insert_liftCore_card (s : Finset X) (y : Y) :
     (insert (Sum.inr y) (liftCore (Y := Y) s)).card = s.card + 1 := by
   have hy : Sum.inr y ∉ liftCore (Y := Y) s := by simp [liftCore]
-  rw [Finset.card_insert_of_not_mem hy, liftCore_card]
+  rw [Finset.card_insert_of_notMem hy, liftCore_card]
 
 theorem graph_uniform (d : SplitGadget X Y) (r : ℕ)
     (hcore : ∀ e ∈ d.core, e.card = r)
@@ -670,7 +670,7 @@ theorem selectedHalf_card (m : ℕ) (b : Fin m → Bool) :
   have hinj : Function.Injective (fun i : Fin m => (some i, b i)) := by
     intro i j hij
     exact Option.some.inj (congrArg Prod.fst hij)
-  rw [selectedHalf, Finset.card_insert_of_not_mem hn,
+  rw [selectedHalf, Finset.card_insert_of_notMem hn,
     Finset.card_image_of_injective _ hinj]
   simp
 
@@ -854,7 +854,7 @@ theorem square_matrix_bound {α β : Type*} [DecidableEq α] [DecidableEq β]
           (B.filter (fun b => ¬ P a b)).card)) = ∑ _a ∈ A, B.card := by
         apply Finset.sum_congr rfl
         intro a haA
-        exact Finset.filter_card_add_filter_neg_card_eq_card (p := P a)
+        exact Finset.card_filter_add_card_filter_not (s := B) (p := P a)
       _ = n * n := by simp [ha, hb]
   by_contra h
   have hlt : 2 * s < n := Nat.lt_of_not_ge h
@@ -901,7 +901,7 @@ theorem exists_maximal_only_edge {H : Hypergraph V} {r : ℕ}
     simp only [candidates, Finset.mem_filter, Finset.mem_univ, true_and]
     exact hnew
   have hbad := hmax (insert y R) hnewmem
-  rw [Finset.card_insert_of_not_mem hy] at hbad
+  rw [Finset.card_insert_of_notMem hy] at hbad
   omega
 
 /-- An independent set cannot be a transversal in a non-two-colorable

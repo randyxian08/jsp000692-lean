@@ -52,7 +52,7 @@ theorem square_matrix_bound {α β : Type*} [DecidableEq α] [DecidableEq β]
           (B.filter (fun b => ¬ P a b)).card)) = ∑ _a ∈ A, B.card := by
         apply Finset.sum_congr rfl
         intro a haA
-        exact Finset.filter_card_add_filter_neg_card_eq_card (p := P a)
+        exact Finset.card_filter_add_card_filter_not (s := B) (p := P a)
       _ = n * n := by simp [ha, hb]
   by_contra h
   have hlt : 2 * s < n := Nat.lt_of_not_ge h
@@ -99,7 +99,7 @@ theorem exists_maximal_only_edge {H : Hypergraph V} {r : ℕ}
     simp only [candidates, Finset.mem_filter, Finset.mem_univ, true_and]
     exact hnew
   have hbad := hmax (insert y R) hnewmem
-  rw [Finset.card_insert_of_not_mem hy] at hbad
+  rw [Finset.card_insert_of_notMem hy] at hbad
   omega
 
 /-- An independent set cannot be a transversal in a non-two-colorable
