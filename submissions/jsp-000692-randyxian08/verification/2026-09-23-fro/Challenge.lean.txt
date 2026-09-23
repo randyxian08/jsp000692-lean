@@ -1,0 +1,19 @@
+import JSP692.AlonGrowth
+import JSP692.LinearIntersection
+
+namespace IndependentChallenge
+
+theorem proof :
+    (∀ C : ℝ, ∀ R : ℕ,
+      ∃ r : ℕ, 2 ≤ r ∧ R ≤ r ∧
+        ∃ n : ℕ, ∃ H : JSP692.Hypergraph (Fin n),
+          JSP692.Uniform H r ∧ JSP692.ThreeChromatic H ∧ JSP692.Intersecting H ∧
+          JSP692.support H = Finset.univ ∧
+          C * (r : ℝ) ^ 2 < ((JSP692.support H).card : ℝ)) ∧
+    (∀ r : ℕ, 2 ≤ r →
+      ∀ n : ℕ, ∀ H : JSP692.Hypergraph (Fin n),
+        JSP692.Uniform H r → JSP692.ThreeChromatic H → JSP692.Intersecting H →
+        ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧
+          (r : ℝ) / 3 ≤ ((e ∩ f).card : ℝ)) := by sorry
+
+end IndependentChallenge

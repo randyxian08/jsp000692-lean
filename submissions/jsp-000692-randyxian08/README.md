@@ -1,6 +1,6 @@
 # JSP-000692 / Erdős 836: both questions
 
-This project formalizes both finite-hypergraph questions of [JSP-000692](../../problems/catalog-0601-0700.md#JSP-000692) in Lean 4.34.0. The original catalog PR [#95](https://github.com/TheJustinSunPrize/awards/pull/95) was closed without merge; this upgrade does not reverse that decision or establish award eligibility. Related early claim: [#50](https://github.com/TheJustinSunPrize/awards/issues/50), not ready for acceptance.
+This project formalizes both finite-hypergraph questions of [JSP-000692](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0601-0700.md#JSP-000692) in Lean 4.34.0. The original catalog PR [#95](https://github.com/TheJustinSunPrize/awards/pull/95) was closed without merge; this upgrade does not reverse that decision or establish award eligibility. Related early claim: [#50](https://github.com/TheJustinSunPrize/awards/issues/50), not ready for acceptance.
 
 ## Proved statements
 
@@ -26,7 +26,7 @@ The verifier builds all modules, prints and checks all 67 theorem axiom reports,
 
 ## Actual evidence and limitations
 
-The current [machine receipt](verification/status.json) records the Lean 4.34.0 local run and links its logs. The older [publication review](verification/publication-review.json) applies only to the historical Lean 4.19.0 source. All 67 current audited declarations use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Source scans reject proof placeholders, added axioms and native-computation escapes. Compiler warnings concern unused section variables only. A separate `lake env leanchecker JSP692` kernel replay also exited successfully; see [the dated verification note](VERIFICATION-20260923.md).
+The current [machine receipt](verification/status.json) records the Lean 4.34.0 local run and links its logs. The older [publication review](verification/publication-review.json) applies only to the historical Lean 4.19.0 source. All 67 current audited declarations use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Source scans reject proof placeholders, added axioms and native-computation escapes. Compiler warnings concern unused section variables only. A separate `lake env leanchecker JSP692` kernel replay also exited successfully; see [the dated verification note](VERIFICATION-20260923.md). A later [FRO comparator and nanoda self-check](verification/2026-09-23-fro/README.md) passed for the fixed Lean 4.34.0 proof commit; it does not substitute for an organizer challenge or English-to-Lean review.
 
 The original both-question candidate needed one type-inference repair: two occurrences of `liftCore s` in `insert_liftCore_card` became `liftCore (Y := Y) s`. The [historical patch](verification/local-fix.patch) changes no mathematical condition or conclusion. The 4.34.0 update changes three renamed Finset lemmas in the modular source and regenerates the standalone source from those modules; no target statement is changed. Any NOT COMPILED comments in the source describe the original authoring environment; the current dated run supersedes them.
 
