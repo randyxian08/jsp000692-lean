@@ -1,0 +1,703 @@
+$ <USER_HOME>/.elan/bin/lake env lean --version
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+info: mathlib: checking out revision '5ed2965256430c3649e86755f9576b54eca72435'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '118aa17ee84656b8bd727fef7c458ee8c833385c'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision 'ddf04cf3949fa556442341e87d47f9f6e6074707'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision 'e928b72544873815af278d38681b31c0293588e3'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '106ff4fafc74ef4ac99d81dbf3ab399118f497a5'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '355695d523e41d0554926416cba2a2b3544fbbc9'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision 'f2effa3d803fda822b1f97b806c47cf2adfbcbc2'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision 'e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204'
+Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+$ <USER_HOME>/.elan/bin/lake exe cache get
+✔ [1/5] Built Cache.Cli (244ms)
+✔ [2/5] Built Cache.Lean (271ms)
+✔ [7/42] Built Cache.Env (248ms)
+✔ [8/42] Built Cache.Infra (255ms)
+✔ [9/42] Built Cache.IO (770ms)
+✔ [10/42] Built Cache.Hashing (469ms)
+✔ [11/42] Built Cache.Cli:c.o (1.2s)
+✔ [12/42] Built Cache.Lean:c.o (1.2s)
+✔ [13/42] Built Cache.Env:c.o (970ms)
+✔ [14/42] Built Cache.Infra:c.o (732ms)
+✔ [15/42] Built Cache.Hashing:c.o (194ms)
+✔ [16/42] Built Batteries.Tactic.OpenPrivate:c.o (1.6s)
+✔ [17/42] Built Cache.IO:c.o (1.0s)
+✔ [18/42] Built Cache.Requests (975ms)
+✔ [19/42] Built Cache.Marker (374ms)
+✔ [20/42] Built Cache.Marker:c.o (65ms)
+✔ [21/42] Built Cache.Upload.Dest (454ms)
+✔ [22/42] Built Cache.Query (499ms)
+✔ [23/42] Built Cache.Upload.Dest:c.o (71ms)
+✔ [24/42] Built Cache.Query:c.o (140ms)
+✔ [25/42] Built Cache.Requests:c.o (1.1s)
+✔ [26/42] Built Cache.Upload.Curl (466ms)
+✔ [27/42] Built Cache.Upload.Rclone (473ms)
+✔ [28/42] Built Cache.Warning (469ms)
+✔ [29/42] Built Cache.Upload.Curl:c.o (96ms)
+✔ [30/42] Built Cache.Upload.Rclone:c.o (94ms)
+✔ [31/42] Built Cache.Warning:c.o (121ms)
+✔ [32/42] Built Cache.Upload.Azure (436ms)
+✔ [33/42] Built Cache.Upload.S3 (474ms)
+✔ [34/42] Built Cache.Upload.Azure:c.o (66ms)
+✔ [35/42] Built Cache.Upload.S3:c.o (133ms)
+✔ [36/42] Built Cache.Upload.Defs (376ms)
+✔ [37/42] Built Cache.Upload.Defs:c.o (65ms)
+✔ [38/42] Built Cache.Upload (339ms)
+✔ [39/42] Built Cache.Upload:c.o (55ms)
+✔ [40/42] Built Cache.Main (569ms)
+✔ [41/42] Built Cache.Main:c.o (351ms)
+✔ [42/42] Built cache:exe (1.5s)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 8908 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/8908 = 0%, 27 KB/s], Decompressed: 0[K
+Downloaded: 26 file(s) [attempted 26/8908 = 0%, 54 KB/s], Decompressed: 0[K
+Downloaded: 57 file(s) [attempted 57/8908 = 0%, 254 KB/s], Decompressed: 0[K
+Downloaded: 67 file(s) [attempted 67/8908 = 0%, 112 KB/s], Decompressed: 1[K
+Downloaded: 97 file(s) [attempted 97/8908 = 1%, 59 KB/s], Decompressed: 67[K
+Downloaded: 118 file(s) [attempted 118/8908 = 1%, 144 KB/s], Decompressed: 97[K
+Downloaded: 138 file(s) [attempted 138/8908 = 1%, 32 KB/s], Decompressed: 118[K
+Downloaded: 159 file(s) [attempted 159/8908 = 1%, 20 KB/s], Decompressed: 138[K
+Downloaded: 169 file(s) [attempted 169/8908 = 1%, 51 KB/s], Decompressed: 159[K
+Downloaded: 189 file(s) [attempted 189/8908 = 2%, 26 KB/s], Decompressed: 169[K
+Downloaded: 199 file(s) [attempted 199/8908 = 2%, 173 KB/s], Decompressed: 189[K
+Downloaded: 240 file(s) [attempted 240/8908 = 2%, 266 KB/s], Decompressed: 199[K
+Downloaded: 250 file(s) [attempted 250/8908 = 2%, 246 KB/s], Decompressed: 240[K
+Downloaded: 301 file(s) [attempted 301/8908 = 3%, 15 KB/s], Decompressed: 250[K
+Downloaded: 352 file(s) [attempted 352/8908 = 3%, 20 KB/s], Decompressed: 301[K
+Downloaded: 362 file(s) [attempted 362/8908 = 4%, 60 KB/s], Decompressed: 352[K
+Downloaded: 372 file(s) [attempted 372/8908 = 4%, 233 KB/s], Decompressed: 362[K
+Downloaded: 413 file(s) [attempted 413/8908 = 4%, 54 KB/s], Decompressed: 393[K
+Downloaded: 433 file(s) [attempted 433/8908 = 4%, 44 KB/s], Decompressed: 413[K
+Downloaded: 464 file(s) [attempted 464/8908 = 5%, 34 KB/s], Decompressed: 433[K
+Downloaded: 474 file(s) [attempted 474/8908 = 5%, 242 KB/s], Decompressed: 464[K
+Downloaded: 515 file(s) [attempted 515/8908 = 5%, 88 KB/s], Decompressed: 504[K
+Downloaded: 525 file(s) [attempted 525/8908 = 5%, 111 KB/s], Decompressed: 515[K
+Downloaded: 576 file(s) [attempted 576/8908 = 6%, 21 KB/s], Decompressed: 545[K
+Downloaded: 627 file(s) [attempted 627/8908 = 7%, 95 KB/s], Decompressed: 576[K
+Downloaded: 678 file(s) [attempted 678/8908 = 7%, 109 KB/s], Decompressed: 627[K
+Downloaded: 698 file(s) [attempted 698/8908 = 7%, 41 KB/s], Decompressed: 678[K
+Downloaded: 729 file(s) [attempted 729/8908 = 8%, 32 KB/s], Decompressed: 718[K
+Downloaded: 749 file(s) [attempted 749/8908 = 8%, 175 KB/s], Decompressed: 739[K
+Downloaded: 780 file(s) [attempted 780/8908 = 8%, 168 KB/s], Decompressed: 769[K
+Downloaded: 820 file(s) [attempted 820/8908 = 9%, 292 KB/s], Decompressed: 800[K
+Downloaded: 841 file(s) [attempted 841/8908 = 9%, 236 KB/s], Decompressed: 830[K
+Downloaded: 871 file(s) [attempted 871/8908 = 9%, 167 KB/s], Decompressed: 861[K
+Downloaded: 902 file(s) [attempted 902/8908 = 10%, 135 KB/s], Decompressed: 891[K
+Downloaded: 922 file(s) [attempted 922/8908 = 10%, 76 KB/s], Decompressed: 902[K
+Downloaded: 953 file(s) [attempted 953/8908 = 10%, 59 KB/s], Decompressed: 922[K
+Downloaded: 973 file(s) [attempted 973/8908 = 10%, 97 KB/s], Decompressed: 953[K
+Downloaded: 1014 file(s) [attempted 1014/8908 = 11%, 174 KB/s], Decompressed: 973[K
+Downloaded: 1024 file(s) [attempted 1024/8908 = 11%, 33 KB/s], Decompressed: 1014[K
+Downloaded: 1044 file(s) [attempted 1044/8908 = 11%, 81 KB/s], Decompressed: 1024[K
+Downloaded: 1064 file(s) [attempted 1064/8908 = 11%, 47 KB/s], Decompressed: 1044[K
+Downloaded: 1105 file(s) [attempted 1105/8908 = 12%, 38 KB/s], Decompressed: 1085[K
+Downloaded: 1146 file(s) [attempted 1146/8908 = 12%, 175 KB/s], Decompressed: 1132[K
+Downloaded: 1166 file(s) [attempted 1166/8908 = 13%, 903 KB/s], Decompressed: 1146[K
+Downloaded: 1176 file(s) [attempted 1176/8908 = 13%, 281 KB/s], Decompressed: 1166[K
+Downloaded: 1227 file(s) [attempted 1227/8908 = 13%, 137 KB/s], Decompressed: 1207[K
+Downloaded: 1237 file(s) [attempted 1237/8908 = 13%, 38 KB/s], Decompressed: 1227[K
+Downloaded: 1268 file(s) [attempted 1268/8908 = 14%, 353 KB/s], Decompressed: 1260[K
+Downloaded: 1298 file(s) [attempted 1298/8908 = 14%, 198 KB/s], Decompressed: 1268[K
+Downloaded: 1329 file(s) [attempted 1329/8908 = 14%, 37 KB/s], Decompressed: 1298[K
+Downloaded: 1349 file(s) [attempted 1349/8908 = 15%, 144 KB/s], Decompressed: 1329[K
+Downloaded: 1380 file(s) [attempted 1380/8908 = 15%, 213 KB/s], Decompressed: 1349[K
+Downloaded: 1410 file(s) [attempted 1410/8908 = 15%, 823 KB/s], Decompressed: 1380[K
+Downloaded: 1430 file(s) [attempted 1430/8908 = 16%, 261 KB/s], Decompressed: 1410[K
+Downloaded: 1461 file(s) [attempted 1461/8908 = 16%, 157 KB/s], Decompressed: 1451[K
+Downloaded: 1481 file(s) [attempted 1481/8908 = 16%, 145 KB/s], Decompressed: 1461[K
+Downloaded: 1522 file(s) [attempted 1522/8908 = 17%, 102 KB/s], Decompressed: 1510[K
+Downloaded: 1542 file(s) [attempted 1542/8908 = 17%, 247 KB/s], Decompressed: 1522[K
+Downloaded: 1552 file(s) [attempted 1552/8908 = 17%, 47 KB/s], Decompressed: 1542[K
+Downloaded: 1583 file(s) [attempted 1583/8908 = 17%, 533 KB/s], Decompressed: 1552[K
+Downloaded: 1614 file(s) [attempted 1614/8908 = 18%, 123 KB/s], Decompressed: 1583[K
+Downloaded: 1634 file(s) [attempted 1634/8908 = 18%, 224 KB/s], Decompressed: 1614[K
+Downloaded: 1664 file(s) [attempted 1664/8908 = 18%, 180 KB/s], Decompressed: 1634[K
+Downloaded: 1695 file(s) [attempted 1695/8908 = 19%, 144 KB/s], Decompressed: 1664[K
+Downloaded: 1705 file(s) [attempted 1705/8908 = 19%, 113 KB/s], Decompressed: 1695[K
+Downloaded: 1746 file(s) [attempted 1746/8908 = 19%, 113 KB/s], Decompressed: 1705[K
+Downloaded: 1756 file(s) [attempted 1756/8908 = 19%, 672 KB/s], Decompressed: 1746[K
+Downloaded: 1776 file(s) [attempted 1776/8908 = 19%, 116 KB/s], Decompressed: 1756[K
+Downloaded: 1807 file(s) [attempted 1807/8908 = 20%, 56 KB/s], Decompressed: 1776[K
+Downloaded: 1827 file(s) [attempted 1827/8908 = 20%, 168 KB/s], Decompressed: 1807[K
+Downloaded: 1837 file(s) [attempted 1837/8908 = 20%, 154 KB/s], Decompressed: 1827[K
+Downloaded: 1878 file(s) [attempted 1878/8908 = 21%, 15 KB/s], Decompressed: 1837[K
+Downloaded: 1898 file(s) [attempted 1898/8908 = 21%, 148 KB/s], Decompressed: 1878[K
+Downloaded: 1919 file(s) [attempted 1919/8908 = 21%, 178 KB/s], Decompressed: 1898[K
+Downloaded: 1949 file(s) [attempted 1949/8908 = 21%, 55 KB/s], Decompressed: 1919[K
+Downloaded: 1959 file(s) [attempted 1959/8908 = 21%, 55 KB/s], Decompressed: 1949[K
+Downloaded: 1969 file(s) [attempted 1969/8908 = 22%, 29 KB/s], Decompressed: 1959[K
+Downloaded: 2010 file(s) [attempted 2010/8908 = 22%, 15 KB/s], Decompressed: 1969[K
+Downloaded: 2020 file(s) [attempted 2020/8908 = 22%, 203 KB/s], Decompressed: 2010[K
+Downloaded: 2071 file(s) [attempted 2071/8908 = 23%, 55 KB/s], Decompressed: 2020[K
+Downloaded: 2081 file(s) [attempted 2081/8908 = 23%, 384 KB/s], Decompressed: 2071[K
+Downloaded: 2122 file(s) [attempted 2122/8908 = 23%, 117 KB/s], Decompressed: 2091[K
+Downloaded: 2132 file(s) [attempted 2132/8908 = 23%, 101 KB/s], Decompressed: 2122[K
+Downloaded: 2173 file(s) [attempted 2173/8908 = 24%, 50 KB/s], Decompressed: 2132[K
+Downloaded: 2183 file(s) [attempted 2183/8908 = 24%, 15 KB/s], Decompressed: 2173[K
+Downloaded: 2193 file(s) [attempted 2193/8908 = 24%, 11 KB/s], Decompressed: 2183[K
+Downloaded: 2203 file(s) [attempted 2203/8908 = 24%, 13 KB/s], Decompressed: 2193[K
+Downloaded: 2213 file(s) [attempted 2213/8908 = 24%, 78 KB/s], Decompressed: 2203[K
+Downloaded: 2234 file(s) [attempted 2234/8908 = 25%, 19 KB/s], Decompressed: 2213[K
+Downloaded: 2244 file(s) [attempted 2244/8908 = 25%, 169 KB/s], Decompressed: 2234[K
+Downloaded: 2255 file(s) [attempted 2255/8908 = 25%, 5 KB/s], Decompressed: 2244[K
+Downloaded: 2295 file(s) [attempted 2295/8908 = 25%, 191 KB/s], Decompressed: 2285[K
+Downloaded: 2305 file(s) [attempted 2305/8908 = 25%, 14 KB/s], Decompressed: 2295[K
+Downloaded: 2356 file(s) [attempted 2356/8908 = 26%, 215 KB/s], Decompressed: 2333[K
+Downloaded: 2407 file(s) [attempted 2407/8908 = 27%, 269 KB/s], Decompressed: 2356[K
+Downloaded: 2457 file(s) [attempted 2457/8908 = 27%, 199 KB/s], Decompressed: 2407[K
+Downloaded: 2508 file(s) [attempted 2508/8908 = 28%, 255 KB/s], Decompressed: 2457[K
+Downloaded: 2559 file(s) [attempted 2559/8908 = 28%, 213 KB/s], Decompressed: 2508[K
+Downloaded: 2610 file(s) [attempted 2610/8908 = 29%, 573 KB/s], Decompressed: 2559[K
+Downloaded: 2620 file(s) [attempted 2620/8908 = 29%, 40 KB/s], Decompressed: 2610[K
+Downloaded: 2661 file(s) [attempted 2661/8908 = 29%, 101 KB/s], Decompressed: 2640[K
+Downloaded: 2671 file(s) [attempted 2671/8908 = 29%, 217 KB/s], Decompressed: 2661[K
+Downloaded: 2691 file(s) [attempted 2691/8908 = 30%, 83 KB/s], Decompressed: 2671[K
+Downloaded: 2722 file(s) [attempted 2722/8908 = 30%, 75 KB/s], Decompressed: 2691[K
+Downloaded: 2742 file(s) [attempted 2742/8908 = 30%, 161 KB/s], Decompressed: 2722[K
+Downloaded: 2773 file(s) [attempted 2773/8908 = 31%, 54 KB/s], Decompressed: 2742[K
+Downloaded: 2783 file(s) [attempted 2783/8908 = 31%, 23 KB/s], Decompressed: 2773[K
+Downloaded: 2813 file(s) [attempted 2813/8908 = 31%, 109 KB/s], Decompressed: 2783[K
+Downloaded: 2834 file(s) [attempted 2834/8908 = 31%, 75 KB/s], Decompressed: 2813[K
+Downloaded: 2844 file(s) [attempted 2844/8908 = 31%, 88 KB/s], Decompressed: 2834[K
+Downloaded: 2884 file(s) [attempted 2884/8908 = 32%, 42 KB/s], Decompressed: 2844[K
+Downloaded: 2895 file(s) [attempted 2895/8908 = 32%, 87 KB/s], Decompressed: 2884[K
+Downloaded: 2915 file(s) [attempted 2915/8908 = 32%, 107 KB/s], Decompressed: 2895[K
+Downloaded: 2966 file(s) [attempted 2966/8908 = 33%, 31 KB/s], Decompressed: 2935[K
+Downloaded: 3017 file(s) [attempted 3017/8908 = 33%, 315 KB/s], Decompressed: 2980[K
+Downloaded: 3067 file(s) [attempted 3067/8908 = 34%, 41 KB/s], Decompressed: 3051[K
+Downloaded: 3078 file(s) [attempted 3078/8908 = 34%, 184 KB/s], Decompressed: 3067[K
+Downloaded: 3118 file(s) [attempted 3118/8908 = 35%, 67 KB/s], Decompressed: 3088[K
+Downloaded: 3128 file(s) [attempted 3128/8908 = 35%, 398 KB/s], Decompressed: 3118[K
+Downloaded: 3149 file(s) [attempted 3149/8908 = 35%, 89 KB/s], Decompressed: 3139[K
+Downloaded: 3189 file(s) [attempted 3189/8908 = 35%, 32 KB/s], Decompressed: 3169[K
+Downloaded: 3210 file(s) [attempted 3210/8908 = 36%, 61 KB/s], Decompressed: 3200[K
+Downloaded: 3240 file(s) [attempted 3240/8908 = 36%, 919 KB/s], Decompressed: 3230[K
+Downloaded: 3261 file(s) [attempted 3261/8908 = 36%, 56 KB/s], Decompressed: 3250[K
+Downloaded: 3291 file(s) [attempted 3291/8908 = 36%, 549 KB/s], Decompressed: 3281[K
+Downloaded: 3301 file(s) [attempted 3301/8908 = 37%, 512 KB/s], Decompressed: 3291[K
+Downloaded: 3332 file(s) [attempted 3332/8908 = 37%, 10 KB/s], Decompressed: 3322[K
+Downloaded: 3352 file(s) [attempted 3352/8908 = 37%, 159 KB/s], Decompressed: 3332[K
+Downloaded: 3383 file(s) [attempted 3383/8908 = 37%, 14 KB/s], Decompressed: 3372[K
+Downloaded: 3403 file(s) [attempted 3403/8908 = 38%, 387 KB/s], Decompressed: 3393[K
+Downloaded: 3423 file(s) [attempted 3423/8908 = 38%, 266 KB/s], Decompressed: 3413[K
+Downloaded: 3454 file(s) [attempted 3454/8908 = 38%, 189 KB/s], Decompressed: 3444[K
+Downloaded: 3474 file(s) [attempted 3474/8908 = 38%, 12 KB/s], Decompressed: 3464[K
+Downloaded: 3515 file(s) [attempted 3515/8908 = 39%, 39 KB/s], Decompressed: 3505[K
+Downloaded: 3545 file(s) [attempted 3545/8908 = 39%, 332 KB/s], Decompressed: 3535[K
+Downloaded: 3576 file(s) [attempted 3576/8908 = 40%, 87 KB/s], Decompressed: 3566[K
+Downloaded: 3596 file(s) [attempted 3596/8908 = 40%, 9 KB/s], Decompressed: 3576[K
+Downloaded: 3647 file(s) [attempted 3647/8908 = 40%, 22 KB/s], Decompressed: 3596[K
+Downloaded: 3657 file(s) [attempted 3657/8908 = 41%, 108 KB/s], Decompressed: 3647[K
+Downloaded: 3698 file(s) [attempted 3698/8908 = 41%, 224 KB/s], Decompressed: 3677[K
+Downloaded: 3708 file(s) [attempted 3708/8908 = 41%, 1192 KB/s], Decompressed: 3698[K
+Downloaded: 3759 file(s) [attempted 3759/8908 = 42%, 480 KB/s], Decompressed: 3728[K
+Downloaded: 3789 file(s) [attempted 3789/8908 = 42%, 9 KB/s], Decompressed: 3759[K
+Downloaded: 3810 file(s) [attempted 3810/8908 = 42%, 101 KB/s], Decompressed: 3789[K
+Downloaded: 3840 file(s) [attempted 3840/8908 = 43%, 479 KB/s], Decompressed: 3810[K
+Downloaded: 3871 file(s) [attempted 3871/8908 = 43%, 260 KB/s], Decompressed: 3840[K
+Downloaded: 3881 file(s) [attempted 3881/8908 = 43%, 282 KB/s], Decompressed: 3871[K
+Downloaded: 3932 file(s) [attempted 3932/8908 = 44%, 66 KB/s], Decompressed: 3881[K
+Downloaded: 3942 file(s) [attempted 3942/8908 = 44%, 139 KB/s], Decompressed: 3932[K
+Downloaded: 3983 file(s) [attempted 3983/8908 = 44%, 36 KB/s], Decompressed: 3942[K
+Downloaded: 3993 file(s) [attempted 3993/8908 = 44%, 147 KB/s], Decompressed: 3983[K
+Downloaded: 4033 file(s) [attempted 4033/8908 = 45%, 32 KB/s], Decompressed: 4003[K
+Downloaded: 4044 file(s) [attempted 4044/8908 = 45%, 199 KB/s], Decompressed: 4033[K
+Downloaded: 4084 file(s) [attempted 4084/8908 = 45%, 40 KB/s], Decompressed: 4064[K
+Downloaded: 4094 file(s) [attempted 4094/8908 = 45%, 17 KB/s], Decompressed: 4084[K
+Downloaded: 4135 file(s) [attempted 4135/8908 = 46%, 127 KB/s], Decompressed: 4094[K
+Downloaded: 4145 file(s) [attempted 4145/8908 = 46%, 361 KB/s], Decompressed: 4135[K
+Downloaded: 4186 file(s) [attempted 4186/8908 = 46%, 178 KB/s], Decompressed: 4145[K
+Downloaded: 4196 file(s) [attempted 4196/8908 = 47%, 547 KB/s], Decompressed: 4186[K
+Downloaded: 4216 file(s) [attempted 4216/8908 = 47%, 102 KB/s], Decompressed: 4196[K
+Downloaded: 4237 file(s) [attempted 4237/8908 = 47%, 222 KB/s], Decompressed: 4216[K
+Downloaded: 4267 file(s) [attempted 4267/8908 = 47%, 98 KB/s], Decompressed: 4237[K
+Downloaded: 4288 file(s) [attempted 4288/8908 = 48%, 95 KB/s], Decompressed: 4267[K
+Downloaded: 4318 file(s) [attempted 4318/8908 = 48%, 50 KB/s], Decompressed: 4288[K
+Downloaded: 4338 file(s) [attempted 4338/8908 = 48%, 503 KB/s], Decompressed: 4318[K
+Downloaded: 4369 file(s) [attempted 4369/8908 = 49%, 14 KB/s], Decompressed: 4338[K
+Downloaded: 4399 file(s) [attempted 4399/8908 = 49%, 85 KB/s], Decompressed: 4389[K
+Downloaded: 4450 file(s) [attempted 4450/8908 = 49%, 287 KB/s], Decompressed: 4440[K
+Downloaded: 4501 file(s) [attempted 4501/8908 = 50%, 87 KB/s], Decompressed: 4491[K
+Downloaded: 4542 file(s) [attempted 4542/8908 = 50%, 96 KB/s], Decompressed: 4532[K
+Downloaded: 4552 file(s) [attempted 4552/8908 = 51%, 19 KB/s], Decompressed: 4542[K
+Downloaded: 4603 file(s) [attempted 4603/8908 = 51%, 362 KB/s], Decompressed: 4593[K
+Downloaded: 4654 file(s) [attempted 4654/8908 = 52%, 186 KB/s], Decompressed: 4603[K
+Downloaded: 4664 file(s) [attempted 4664/8908 = 52%, 92 KB/s], Decompressed: 4654[K
+Downloaded: 4704 file(s) [attempted 4704/8908 = 52%, 309 KB/s], Decompressed: 4684[K
+Downloaded: 4715 file(s) [attempted 4715/8908 = 52%, 46 KB/s], Decompressed: 4704[K
+Downloaded: 4745 file(s) [attempted 4745/8908 = 53%, 99 KB/s], Decompressed: 4715[K
+Downloaded: 4776 file(s) [attempted 4776/8908 = 53%, 284 KB/s], Decompressed: 4765[K
+Downloaded: 4796 file(s) [attempted 4796/8908 = 53%, 150 KB/s], Decompressed: 4776[K
+Downloaded: 4826 file(s) [attempted 4826/8908 = 54%, 84 KB/s], Decompressed: 4804[K
+Downloaded: 4847 file(s) [attempted 4847/8908 = 54%, 376 KB/s], Decompressed: 4826[K
+Downloaded: 4877 file(s) [attempted 4877/8908 = 54%, 86 KB/s], Decompressed: 4847[K
+Downloaded: 4898 file(s) [attempted 4898/8908 = 54%, 151 KB/s], Decompressed: 4877[K
+Downloaded: 4918 file(s) [attempted 4918/8908 = 55%, 9 KB/s], Decompressed: 4908[K
+Downloaded: 4948 file(s) [attempted 4948/8908 = 55%, 96 KB/s], Decompressed: 4944[K
+Downloaded: 4959 file(s) [attempted 4959/8908 = 55%, 398 KB/s], Decompressed: 4948[K
+Downloaded: 5009 file(s) [attempted 5009/8908 = 56%, 79 KB/s], Decompressed: 4989[K
+Downloaded: 5050 file(s) [attempted 5050/8908 = 56%, 137 KB/s], Decompressed: 5009[K
+Downloaded: 5060 file(s) [attempted 5060/8908 = 56%, 154 KB/s], Decompressed: 5050[K
+Downloaded: 5101 file(s) [attempted 5101/8908 = 57%, 8 KB/s], Decompressed: 5060[K
+Downloaded: 5111 file(s) [attempted 5111/8908 = 57%, 354 KB/s], Decompressed: 5101[K
+Downloaded: 5152 file(s) [attempted 5152/8908 = 57%, 9 KB/s], Decompressed: 5142[K
+Downloaded: 5162 file(s) [attempted 5162/8908 = 57%, 301 KB/s], Decompressed: 5152[K
+Downloaded: 5182 file(s) [attempted 5182/8908 = 58%, 77 KB/s], Decompressed: 5162[K
+Downloaded: 5213 file(s) [attempted 5213/8908 = 58%, 362 KB/s], Decompressed: 5182[K
+Downloaded: 5233 file(s) [attempted 5233/8908 = 58%, 120 KB/s], Decompressed: 5213[K
+Downloaded: 5253 file(s) [attempted 5253/8908 = 58%, 20 KB/s], Decompressed: 5233[K
+Downloaded: 5284 file(s) [attempted 5284/8908 = 59%, 247 KB/s], Decompressed: 5253[K
+Downloaded: 5304 file(s) [attempted 5304/8908 = 59%, 145 KB/s], Decompressed: 5284[K
+Downloaded: 5335 file(s) [attempted 5335/8908 = 59%, 14 KB/s], Decompressed: 5304[K
+Downloaded: 5355 file(s) [attempted 5355/8908 = 60%, 181 KB/s], Decompressed: 5335[K
+Downloaded: 5386 file(s) [attempted 5386/8908 = 60%, 345 KB/s], Decompressed: 5355[K
+Downloaded: 5406 file(s) [attempted 5406/8908 = 60%, 11 KB/s], Decompressed: 5386[K
+Downloaded: 5436 file(s) [attempted 5436/8908 = 61%, 58 KB/s], Decompressed: 5406[K
+Downloaded: 5447 file(s) [attempted 5447/8908 = 61%, 376 KB/s], Decompressed: 5436[K
+Downloaded: 5497 file(s) [attempted 5497/8908 = 61%, 91 KB/s], Decompressed: 5481[K
+Downloaded: 5548 file(s) [attempted 5548/8908 = 62%, 115 KB/s], Decompressed: 5497[K
+Downloaded: 5599 file(s) [attempted 5599/8908 = 62%, 168 KB/s], Decompressed: 5548[K
+Downloaded: 5650 file(s) [attempted 5650/8908 = 63%, 49 KB/s], Decompressed: 5599[K
+Downloaded: 5670 file(s) [attempted 5670/8908 = 63%, 448 KB/s], Decompressed: 5650[K
+Downloaded: 5711 file(s) [attempted 5711/8908 = 64%, 38 KB/s], Decompressed: 5680[K
+Downloaded: 5731 file(s) [attempted 5731/8908 = 64%, 45 KB/s], Decompressed: 5711[K
+Downloaded: 5741 file(s) [attempted 5741/8908 = 64%, 30 KB/s], Decompressed: 5731[K
+Downloaded: 5782 file(s) [attempted 5782/8908 = 64%, 311 KB/s], Decompressed: 5752[K
+Downloaded: 5803 file(s) [attempted 5803/8908 = 65%, 164 KB/s], Decompressed: 5782[K
+Downloaded: 5833 file(s) [attempted 5833/8908 = 65%, 117 KB/s], Decompressed: 5803[K
+Downloaded: 5853 file(s) [attempted 5853/8908 = 65%, 98 KB/s], Decompressed: 5833[K
+Downloaded: 5894 file(s) [attempted 5894/8908 = 66%, 34 KB/s], Decompressed: 5853[K
+Downloaded: 5904 file(s) [attempted 5904/8908 = 66%, 15 KB/s], Decompressed: 5894[K
+Downloaded: 5925 file(s) [attempted 5925/8908 = 66%, 305 KB/s], Decompressed: 5904[K
+Downloaded: 5955 file(s) [attempted 5955/8908 = 66%, 72 KB/s], Decompressed: 5925[K
+Downloaded: 5975 file(s) [attempted 5975/8908 = 67%, 91 KB/s], Decompressed: 5955[K
+Downloaded: 6006 file(s) [attempted 6006/8908 = 67%, 290 KB/s], Decompressed: 5975[K
+Downloaded: 6036 file(s) [attempted 6036/8908 = 67%, 134 KB/s], Decompressed: 6006[K
+Downloaded: 6067 file(s) [attempted 6067/8908 = 68%, 39 KB/s], Decompressed: 6036[K
+Downloaded: 6077 file(s) [attempted 6077/8908 = 68%, 72 KB/s], Decompressed: 6067[K
+Downloaded: 6118 file(s) [attempted 6118/8908 = 68%, 54 KB/s], Decompressed: 6077[K
+Downloaded: 6138 file(s) [attempted 6138/8908 = 68%, 63 KB/s], Decompressed: 6118[K
+Downloaded: 6148 file(s) [attempted 6148/8908 = 69%, 88 KB/s], Decompressed: 6138[K
+Downloaded: 6158 file(s) [attempted 6158/8908 = 69%, 118 KB/s], Decompressed: 6148[K
+Downloaded: 6169 file(s) [attempted 6169/8908 = 69%, 62 KB/s], Decompressed: 6158[K
+Downloaded: 6219 file(s) [attempted 6219/8908 = 69%, 28 KB/s], Decompressed: 6169[K
+Downloaded: 6270 file(s) [attempted 6270/8908 = 70%, 225 KB/s], Decompressed: 6219[K
+Downloaded: 6301 file(s) [attempted 6301/8908 = 70%, 162 KB/s], Decompressed: 6219[K
+Downloaded: 6321 file(s) [attempted 6321/8908 = 70%, 19 KB/s], Decompressed: 6270[K
+Downloaded: 6372 file(s) [attempted 6372/8908 = 71%, 84 KB/s], Decompressed: 6367[K
+Downloaded: 6382 file(s) [attempted 6382/8908 = 71%, 27 KB/s], Decompressed: 6372[K
+Downloaded: 6413 file(s) [attempted 6413/8908 = 71%, 121 KB/s], Decompressed: 6382[K
+Downloaded: 6433 file(s) [attempted 6433/8908 = 72%, 402 KB/s], Decompressed: 6402[K
+Downloaded: 6474 file(s) [attempted 6474/8908 = 72%, 42 KB/s], Decompressed: 6453[K
+Downloaded: 6484 file(s) [attempted 6484/8908 = 72%, 282 KB/s], Decompressed: 6474[K
+Downloaded: 6524 file(s) [attempted 6524/8908 = 73%, 55 KB/s], Decompressed: 6514[K
+Downloaded: 6535 file(s) [attempted 6535/8908 = 73%, 46 KB/s], Decompressed: 6524[K
+Downloaded: 6547 file(s) [attempted 6547/8908 = 73%, 191 KB/s], Decompressed: 6535[K
+Downloaded: 6585 file(s) [attempted 6585/8908 = 73%, 23 KB/s], Decompressed: 6555[K
+Downloaded: 6606 file(s) [attempted 6606/8908 = 74%, 155 KB/s], Decompressed: 6585[K
+Downloaded: 6626 file(s) [attempted 6626/8908 = 74%, 67 KB/s], Decompressed: 6606[K
+Downloaded: 6657 file(s) [attempted 6657/8908 = 74%, 99 KB/s], Decompressed: 6626[K
+Downloaded: 6677 file(s) [attempted 6677/8908 = 74%, 18 KB/s], Decompressed: 6657[K
+Downloaded: 6707 file(s) [attempted 6707/8908 = 75%, 146 KB/s], Decompressed: 6697[K
+Downloaded: 6728 file(s) [attempted 6728/8908 = 75%, 216 KB/s], Decompressed: 6707[K
+Downloaded: 6758 file(s) [attempted 6758/8908 = 75%, 64 KB/s], Decompressed: 6728[K
+Downloaded: 6779 file(s) [attempted 6779/8908 = 76%, 205 KB/s], Decompressed: 6758[K
+Downloaded: 6789 file(s) [attempted 6789/8908 = 76%, 69 KB/s], Decompressed: 6779[K
+Downloaded: 6829 file(s) [attempted 6829/8908 = 76%, 152 KB/s], Decompressed: 6789[K
+Downloaded: 6850 file(s) [attempted 6850/8908 = 76%, 337 KB/s], Decompressed: 6829[K
+Downloaded: 6901 file(s) [attempted 6901/8908 = 77%, 497 KB/s], Decompressed: 6850[K
+Downloaded: 6951 file(s) [attempted 6951/8908 = 78%, 460 KB/s], Decompressed: 6901[K
+Downloaded: 6986 file(s) [attempted 6986/8908 = 78%, 87 KB/s], Decompressed: 6951[K
+Downloaded: 7002 file(s) [attempted 7002/8908 = 78%, 899 KB/s], Decompressed: 6986[K
+Downloaded: 7043 file(s) [attempted 7043/8908 = 79%, 40 KB/s], Decompressed: 7012[K
+Downloaded: 7053 file(s) [attempted 7053/8908 = 79%, 108 KB/s], Decompressed: 7043[K
+Downloaded: 7104 file(s) [attempted 7104/8908 = 79%, 35 KB/s], Decompressed: 7053[K
+Downloaded: 7155 file(s) [attempted 7155/8908 = 80%, 21 KB/s], Decompressed: 7104[K
+Downloaded: 7206 file(s) [attempted 7206/8908 = 80%, 68 KB/s], Decompressed: 7185[K
+Downloaded: 7256 file(s) [attempted 7256/8908 = 81%, 36 KB/s], Decompressed: 7226[K
+Downloaded: 7267 file(s) [attempted 7267/8908 = 81%, 142 KB/s], Decompressed: 7256[K
+Downloaded: 7287 file(s) [attempted 7287/8908 = 81%, 84 KB/s], Decompressed: 7277[K
+Downloaded: 7307 file(s) [attempted 7307/8908 = 82%, 88 KB/s], Decompressed: 7287[K
+Downloaded: 7338 file(s) [attempted 7338/8908 = 82%, 112 KB/s], Decompressed: 7307[K
+Downloaded: 7389 file(s) [attempted 7389/8908 = 82%, 88 KB/s], Decompressed: 7368[K
+Downloaded: 7399 file(s) [attempted 7399/8908 = 83%, 95 KB/s], Decompressed: 7389[K
+Downloaded: 7450 file(s) [attempted 7450/8908 = 83%, 404 KB/s], Decompressed: 7433[K
+Downloaded: 7500 file(s) [attempted 7500/8908 = 84%, 243 KB/s], Decompressed: 7480[K
+Downloaded: 7521 file(s) [attempted 7521/8908 = 84%, 52 KB/s], Decompressed: 7500[K
+Downloaded: 7561 file(s) [attempted 7561/8908 = 84%, 82 KB/s], Decompressed: 7521[K
+Downloaded: 7572 file(s) [attempted 7572/8908 = 85%, 16 KB/s], Decompressed: 7561[K
+Downloaded: 7612 file(s) [attempted 7612/8908 = 85%, 225 KB/s], Decompressed: 7605[K
+Downloaded: 7622 file(s) [attempted 7622/8908 = 85%, 398 KB/s], Decompressed: 7612[K
+Downloaded: 7663 file(s) [attempted 7663/8908 = 86%, 42 KB/s], Decompressed: 7622[K
+Downloaded: 7683 file(s) [attempted 7683/8908 = 86%, 304 KB/s], Decompressed: 7663[K
+Downloaded: 7734 file(s) [attempted 7734/8908 = 86%, 48 KB/s], Decompressed: 7694[K
+Downloaded: 7785 file(s) [attempted 7785/8908 = 87%, 49 KB/s], Decompressed: 7734[K
+Downloaded: 7816 file(s) [attempted 7816/8908 = 87%, 10 KB/s], Decompressed: 7785[K
+Downloaded: 7846 file(s) [attempted 7846/8908 = 88%, 79 KB/s], Decompressed: 7816[K
+Downloaded: 7856 file(s) [attempted 7856/8908 = 88%, 32 KB/s], Decompressed: 7846[K
+Downloaded: 7897 file(s) [attempted 7897/8908 = 88%, 62 KB/s], Decompressed: 7856[K
+Downloaded: 7907 file(s) [attempted 7907/8908 = 88%, 88 KB/s], Decompressed: 7897[K
+Downloaded: 7917 file(s) [attempted 7917/8908 = 88%, 120 KB/s], Decompressed: 7907[K
+Downloaded: 7958 file(s) [attempted 7958/8908 = 89%, 42 KB/s], Decompressed: 7917[K
+Downloaded: 7968 file(s) [attempted 7968/8908 = 89%, 157 KB/s], Decompressed: 7958[K
+Downloaded: 7988 file(s) [attempted 7988/8908 = 89%, 50 KB/s], Decompressed: 7968[K
+Downloaded: 8019 file(s) [attempted 8019/8908 = 90%, 863 KB/s], Decompressed: 7988[K
+Downloaded: 8029 file(s) [attempted 8029/8908 = 90%, 456 KB/s], Decompressed: 8019[K
+Downloaded: 8060 file(s) [attempted 8060/8908 = 90%, 157 KB/s], Decompressed: 8029[K
+Downloaded: 8080 file(s) [attempted 8080/8908 = 90%, 145 KB/s], Decompressed: 8060[K
+Downloaded: 8111 file(s) [attempted 8111/8908 = 91%, 31 KB/s], Decompressed: 8080[K
+Downloaded: 8131 file(s) [attempted 8131/8908 = 91%, 25 KB/s], Decompressed: 8111[K
+Downloaded: 8161 file(s) [attempted 8161/8908 = 91%, 97 KB/s], Decompressed: 8131[K
+Downloaded: 8182 file(s) [attempted 8182/8908 = 91%, 104 KB/s], Decompressed: 8161[K
+Downloaded: 8222 file(s) [attempted 8222/8908 = 92%, 249 KB/s], Decompressed: 8182[K
+Downloaded: 8233 file(s) [attempted 8233/8908 = 92%, 29 KB/s], Decompressed: 8222[K
+Downloaded: 8243 file(s) [attempted 8243/8908 = 92%, 101 KB/s], Decompressed: 8233[K
+Downloaded: 8294 file(s) [attempted 8294/8908 = 93%, 67 KB/s], Decompressed: 8243[K
+Downloaded: 8304 file(s) [attempted 8304/8908 = 93%, 236 KB/s], Decompressed: 8294[K
+Downloaded: 8355 file(s) [attempted 8355/8908 = 93%, 67 KB/s], Decompressed: 8304[K
+Downloaded: 8365 file(s) [attempted 8365/8908 = 93%, 32 KB/s], Decompressed: 8355[K
+Downloaded: 8375 file(s) [attempted 8375/8908 = 94%, 83 KB/s], Decompressed: 8365[K
+Downloaded: 8405 file(s) [attempted 8405/8908 = 94%, 22 KB/s], Decompressed: 8375[K
+Downloaded: 8426 file(s) [attempted 8426/8908 = 94%, 243 KB/s], Decompressed: 8405[K
+Downloaded: 8466 file(s) [attempted 8466/8908 = 95%, 59 KB/s], Decompressed: 8426[K
+Downloaded: 8477 file(s) [attempted 8477/8908 = 95%, 145 KB/s], Decompressed: 8466[K
+Downloaded: 8487 file(s) [attempted 8487/8908 = 95%, 264 KB/s], Decompressed: 8477[K
+Downloaded: 8527 file(s) [attempted 8527/8908 = 95%, 1122 KB/s], Decompressed: 8487[K
+Downloaded: 8538 file(s) [attempted 8538/8908 = 95%, 268 KB/s], Decompressed: 8527[K
+Downloaded: 8558 file(s) [attempted 8558/8908 = 96%, 86 KB/s], Decompressed: 8538[K
+Downloaded: 8588 file(s) [attempted 8588/8908 = 96%, 50 KB/s], Decompressed: 8558[K
+Downloaded: 8599 file(s) [attempted 8599/8908 = 96%, 125 KB/s], Decompressed: 8588[K
+Downloaded: 8619 file(s) [attempted 8619/8908 = 96%, 122 KB/s], Decompressed: 8599[K
+Downloaded: 8649 file(s) [attempted 8649/8908 = 97%, 308 KB/s], Decompressed: 8619[K
+Downloaded: 8670 file(s) [attempted 8670/8908 = 97%, 229 KB/s], Decompressed: 8649[K
+Downloaded: 8700 file(s) [attempted 8700/8908 = 97%, 18 KB/s], Decompressed: 8670[K
+Downloaded: 8731 file(s) [attempted 8731/8908 = 98%, 96 KB/s], Decompressed: 8700[K
+Downloaded: 8751 file(s) [attempted 8751/8908 = 98%, 471 KB/s], Decompressed: 8731[K
+Downloaded: 8782 file(s) [attempted 8782/8908 = 98%, 281 KB/s], Decompressed: 8751[K
+Downloaded: 8802 file(s) [attempted 8802/8908 = 98%, 151 KB/s], Decompressed: 8782[K
+Downloaded: 8812 file(s) [attempted 8812/8908 = 98%, 163 KB/s], Decompressed: 8802[K
+Downloaded: 8853 file(s) [attempted 8853/8908 = 99%, 227 KB/s], Decompressed: 8812[K
+Downloaded: 8863 file(s) [attempted 8863/8908 = 99%, 27 KB/s], Decompressed: 8853[K
+Downloaded: 8908 file(s) [attempted 8908/8908 = 100%, 27 KB/s], Decompressed: 8863[K
+Decompressed 8908 file(s)
+Already decompressed 8908 file(s)
+$ git -C <PROJECT>/.lake/packages/mathlib rev-parse HEAD
+5ed2965256430c3649e86755f9576b54eca72435
+$ git -C <PROJECT>/.lake/packages/plausible rev-parse HEAD
+118aa17ee84656b8bd727fef7c458ee8c833385c
+$ git -C <PROJECT>/.lake/packages/LeanSearchClient rev-parse HEAD
+ddf04cf3949fa556442341e87d47f9f6e6074707
+$ git -C <PROJECT>/.lake/packages/importGraph rev-parse HEAD
+e928b72544873815af278d38681b31c0293588e3
+$ git -C <PROJECT>/.lake/packages/proofwidgets rev-parse HEAD
+106ff4fafc74ef4ac99d81dbf3ab399118f497a5
+$ git -C <PROJECT>/.lake/packages/aesop rev-parse HEAD
+355695d523e41d0554926416cba2a2b3544fbbc9
+$ git -C <PROJECT>/.lake/packages/Qq rev-parse HEAD
+6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259
+$ git -C <PROJECT>/.lake/packages/batteries rev-parse HEAD
+f2effa3d803fda822b1f97b806c47cf2adfbcbc2
+$ git -C <PROJECT>/.lake/packages/Cli rev-parse HEAD
+e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204
+$ <USER_HOME>/.elan/bin/lake build JSP692
+⚠ [8924/8933] Built JSP692.Hypergraph (25s)
+warning: JSP692/Hypergraph.lean:35:0: automatically included section variable(s) unused in theorem `JSP692.not_proper_of_mono`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8925/8933] Built JSP692.SplitGadget (10s)
+warning: JSP692/SplitGadget.lean:55:0: automatically included section variable(s) unused in theorem `JSP692.mono_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/SplitGadget.lean:63:0: automatically included section variable(s) unused in theorem `JSP692.mono_insert_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8926/8933] Built JSP692.Relabel (10s)
+warning: JSP692/Relabel.lean:13:0: automatically included section variable(s) unused in theorem `JSP692.uniform_relabel`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/Relabel.lean:29:0: automatically included section variable(s) unused in theorem `JSP692.proper_relabel_iff`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8927/8933] Built JSP692.LinearIntersection (10s)
+warning: JSP692/LinearIntersection.lean:107:0: automatically included section variable(s) unused in theorem `JSP692.edge_disjoint_of_independent`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8928/8933] Built JSP692.AlonCore (5.1s)
+warning: JSP692/AlonCore.lean:15:0: automatically included section variable(s) unused in theorem `JSP692.coreObstructs_of_balanced_splits`:
+  [DecidableEq Y]
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Y] [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP692/AlonCore.lean:98:0: automatically included section variable(s) unused in theorem `JSP692.liftCore_card`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8929/8933] Built JSP692.AlonGeometry (5.6s)
+✔ [8930/8933] Built JSP692.AlonGrowth (5.9s)
+✔ [8931/8933] Built JSP692.Complete (3.2s)
+✔ [8932/8933] Built JSP692 (3.0s)
+Build completed successfully (8933 jobs).
+$ <USER_HOME>/.elan/bin/lake env lean Audit.lean
+'JSP692.not_proper_of_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.transversal_contains_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeColorable_of_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.leftEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rightEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_insert_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.not_twoColorable_of_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreObstructs_of_balanced_splits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_not_twoColorable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.insert_liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.graph_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.inl_mem_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersect_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_complement_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_edge_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_right_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.uniform_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersecting_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.proper_relabel_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeChromatic_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.support_relabel_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_core_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_contains_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_labels_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_vertex_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_for_every_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.cubic_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_exceeds_every_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.square_matrix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.exists_maximal_only_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_disjoint_of_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_meets_only_set_at_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rank_le_twice_intersection_bound_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_one_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.quadratic_counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two_assertion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+$ <USER_HOME>/.elan/bin/lake env lean Statement.lean
+def JSP692.Uniform.{u_1} : {V : Type u_1} → JSP692.Hypergraph V → ℕ → Prop :=
+fun {V} H r => ∀ e ∈ H, e.card = r
+def JSP692.Intersecting.{u_1} : {V : Type u_1} → [DecidableEq V] → JSP692.Hypergraph V → Prop :=
+fun {V} [DecidableEq V] H => ∀ e ∈ H, ∀ f ∈ H, (e ∩ f).Nonempty
+def JSP692.Proper.{u_1, u_2} : {V : Type u_1} → {C : Type u_2} → JSP692.Hypergraph V → (V → C) → Prop :=
+fun {V} {C} H c => ∀ e ∈ H, ∃ u ∈ e, ∃ v ∈ e, c u ≠ c v
+def JSP692.ThreeChromatic.{u_1} : {V : Type u_1} → JSP692.Hypergraph V → Prop :=
+fun {V} H => (∃ c, JSP692.Proper H c) ∧ ¬∃ c, JSP692.Proper H c
+def JSP692.support.{u_1} : {V : Type u_1} → [DecidableEq V] → JSP692.Hypergraph V → Finset V :=
+fun {V} [DecidableEq V] H => Finset.biUnion H id
+def JSP692.QuadraticVertexBound : Prop :=
+∃ C,
+  0 < C ∧
+    ∃ R,
+      ∀ (r : ℕ),
+        2 ≤ r →
+          R ≤ r →
+            ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+              JSP692.Uniform H r →
+                JSP692.ThreeChromatic H → JSP692.Intersecting H → ↑(JSP692.support H).card ≤ C * ↑r ^ 2
+def JSP692.LinearIntersectionAssertion : Prop :=
+∃ C,
+  0 < C ∧
+    ∀ (r : ℕ),
+      2 ≤ r →
+        ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+          JSP692.Uniform H r →
+            JSP692.ThreeChromatic H → JSP692.Intersecting H → ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧ C * ↑r ≤ ↑(e ∩ f).card
+JSP692.jsp000692_complete : ¬JSP692.QuadraticVertexBound ∧ JSP692.LinearIntersectionAssertion
+JSP692.jsp000692_complete_explicit :
+  (∀ (C : ℝ) (R : ℕ),
+      ∃ r,
+        2 ≤ r ∧
+          R ≤ r ∧
+            ∃ n H,
+              JSP692.Uniform H r ∧
+                JSP692.ThreeChromatic H ∧
+                  JSP692.Intersecting H ∧ JSP692.support H = Finset.univ ∧ C * ↑r ^ 2 < ↑(JSP692.support H).card) ∧
+    ∀ (r : ℕ),
+      2 ≤ r →
+        ∀ (n : ℕ) (H : JSP692.Hypergraph (Fin n)),
+          JSP692.Uniform H r →
+            JSP692.ThreeChromatic H → JSP692.Intersecting H → ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧ ↑r / 3 ≤ ↑(e ∩ f).card
+$ <USER_HOME>/.elan/bin/lake env lean JSP000692.lean
+JSP000692.lean:43:0: warning: automatically included section variable(s) unused in theorem `JSP692.not_proper_of_mono`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:177:0: warning: automatically included section variable(s) unused in theorem `JSP692.mono_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:185:0: warning: automatically included section variable(s) unused in theorem `JSP692.mono_insert_liftCore`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:229:0: warning: automatically included section variable(s) unused in theorem `JSP692.coreObstructs_of_balanced_splits`:
+  [DecidableEq Y]
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq Y] [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:312:0: warning: automatically included section variable(s) unused in theorem `JSP692.liftCore_card`:
+  [Fintype Y]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype Y] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:577:0: warning: automatically included section variable(s) unused in theorem `JSP692.uniform_relabel`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:593:0: warning: automatically included section variable(s) unused in theorem `JSP692.proper_relabel_iff`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+JSP000692.lean:909:0: warning: automatically included section variable(s) unused in theorem `JSP692.edge_disjoint_of_independent`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'JSP692.not_proper_of_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.transversal_contains_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeColorable_of_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.leftEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rightEdge_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.mono_insert_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.not_twoColorable_of_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.coreObstructs_of_balanced_splits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_coreObstructs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_not_twoColorable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.insert_liftCore_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.graph_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.inl_mem_liftCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersect_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_complement_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_edge_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_core_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_left_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_right_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.canonical_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.uniform_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.intersecting_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.proper_relabel_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.threeChromatic_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.support_relabel_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_core_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_contains_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedHalf_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.selectedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_labels_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_vertex_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_intersecting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_threeChromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_support_eq_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alonFin_active_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_for_every_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.cubic_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.alon_exceeds_every_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.square_matrix_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.exists_maximal_only_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_disjoint_of_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.edge_meets_only_set_at_point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.rank_le_twice_intersection_bound_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.large_intersection_one_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.quadratic_counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_question_two_assertion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP692.jsp000692_complete_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Both full-quantifier statements compiled and passed the requested axiom checks. No award decision is implied.

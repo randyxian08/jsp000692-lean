@@ -1,0 +1,51 @@
+import JSP692
+
+set_option autoImplicit false
+
+namespace Review836
+
+/-- Conventional proper colouring: no edge has a constant colour. -/
+def StandardProper {V C : Type*} [DecidableEq V]
+    (H : Finset (Finset V)) (c : V → C) : Prop :=
+  ∀ e ∈ H, ¬ ∃ b : C, ∀ x ∈ e, c x = b
+
+theorem proper_iff_standard {V C : Type*} [DecidableEq V]
+    {H : Finset (Finset V)} {r : ℕ} (hr : 2 ≤ r)
+    (hu : ∀ e ∈ H, e.card = r) (c : V → C) :
+    JSP692.Proper H c ↔ StandardProper H c := by
+  classical
+  constructor
+  · intro hp e he hm
+    exact JSP692.not_proper_of_mono he hm hp
+  · intro hs e he
+    have hpos : 0 < e.card := by rw [hu e he]; omega
+    obtain ⟨u, hue⟩ := Finset.card_pos.mp hpos
+    have hex : ∃ v ∈ e, c v ≠ c u := by
+      by_contra hn
+      apply hs e he
+      refine ⟨c u, ?_⟩
+      intro v hv
+      by_contra hne
+      exact hn ⟨v, hv, hne⟩
+    obtain ⟨v, hve, hne⟩ := hex
+    exact ⟨v, hve, u, hue, hne⟩
+
+/-- Question 2 in conventional predicates, exposing all finite quantifiers.
+No maximal-set condition or intersection bound is assumed. -/
+theorem question_two_standard (r n : ℕ) (H : Finset (Finset (Fin n)))
+    (hr : 2 ≤ r)
+    (hu : ∀ e ∈ H, e.card = r)
+    (hi : ∀ e ∈ H, ∀ f ∈ H, (e ∩ f).Nonempty)
+    (hn : ¬ ∃ c : Fin n → Bool, StandardProper H c) :
+    ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧
+      r ≤ 2 * (e ∩ f).card + 1 := by
+  have hn' : ¬ ∃ c : Fin n → Bool, JSP692.Proper H c := by
+    rintro ⟨c, hc⟩
+    exact hn ⟨c, (proper_iff_standard hr hu c).mp hc⟩
+  exact JSP692.large_intersection_nat hr hu hi hn'
+
+#print axioms proper_iff_standard
+#print axioms question_two_standard
+#check question_two_standard
+
+end Review836

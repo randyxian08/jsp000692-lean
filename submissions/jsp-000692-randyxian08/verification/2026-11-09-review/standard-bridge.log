@@ -1,0 +1,5 @@
+'Review836.proper_iff_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Review836.question_two_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+Review836.question_two_standard (r n : ℕ) (H : Finset (Finset (Fin n))) (hr : 2 ≤ r) (hu : ∀ e ∈ H, e.card = r)
+  (hi : ∀ e ∈ H, ∀ f ∈ H, (e ∩ f).Nonempty) (hn : ¬∃ c, StandardProper H c) :
+  ∃ e ∈ H, ∃ f ∈ H, e ≠ f ∧ r ≤ 2 * (e ∩ f).card + 1

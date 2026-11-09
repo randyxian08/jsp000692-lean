@@ -1,0 +1,53 @@
+{
+  "selected_commit": "721bef439aaa4f98b1185c4dc31060f4ae1a3ea0",
+  "rebuild_status": "PASS_LEAN_AND_AXIOM_AUDIT",
+  "axiom_reports": 67,
+  "source_unchanged": {
+    "submissions/jsp-000692-randyxian08/JSP692/AlonCore.lean": {
+      "git_blob": "62624b1009d0786b8a2f3aaa7c3606248b25a0ae",
+      "sha256": "a7e9f636a74a50664fc031ff081097c8a9b2f946168d28d9aae0c2d8da2e8e9c"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/AlonGeometry.lean": {
+      "git_blob": "110f7f2f953865a358359955bc424b92905bf6df",
+      "sha256": "d002e13fffdb5d05e0fdd1e72785676512981f48edcb392afe1b4a5be4e12f9e"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/AlonGrowth.lean": {
+      "git_blob": "061e5973e436a2a5675d9a7d428a4facac06457d",
+      "sha256": "ed85909459e5c97f2d887f6a12e71b5dd18cd3b63203edfa7326887c3ab5b659"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/Complete.lean": {
+      "git_blob": "2de8075b469861e7d5df6ac1951e4a238f41161c",
+      "sha256": "eceda31370e550b9ff3cc98e0f9c6f1b8939a9a4f42aa788d6c667a7bd9e4ae4"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/Hypergraph.lean": {
+      "git_blob": "bd9896db723f4e9489e79d6a69d59076685cb235",
+      "sha256": "84804dfda7384bf547a3414f1f5c2b774e9ba609427dd35f75915e9b8981c70a"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/LinearIntersection.lean": {
+      "git_blob": "eb58ec70e5d6d54a70636955ecab81f32ff4715e",
+      "sha256": "0d134797b6adf2c20ddb8012b73369738d689ef15de932134dc78926f8fc7638"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/Relabel.lean": {
+      "git_blob": "778cec6cdefe9d211e34f0340a01e02e4e6e7281",
+      "sha256": "a19c7c0df4ae417e642db8d109ac3bc779e5380268c7eb1984d4db3bca0e769a"
+    },
+    "submissions/jsp-000692-randyxian08/JSP692/SplitGadget.lean": {
+      "git_blob": "e6ed3be2e6dc4fc54ec18190233524883ae03a1d",
+      "sha256": "83073018db082df150e8c3b00b0d037f175369090d02c101e26af69f638393c0"
+    }
+  },
+  "standard_bridge_exit_code": 0,
+  "standard_bridge_sha256": "7ac69ff770347f52f315a86377734408537ee95ca1fed3edd77b0e0b217c00c0",
+  "full_original_problem_review": "finite two-question argument checked; infinite-family bridge not formally included",
+  "external_human_review": false,
+  "official_acceptance": false,
+  "leanchecker_exit_code": 0,
+  "leanchecker_log_bytes": 0,
+  "published_artifacts": {
+    "standard-bridge.log": "f759e0defb3a73a092fd10ab117375ba01609a71257feefe9ddbfae4a761b345",
+    "ReviewStandard.lean.txt": "7ac69ff770347f52f315a86377734408537ee95ca1fed3edd77b0e0b217c00c0",
+    "rebuild.log": "c0e3c2a0c768ccdfadec2853a83f90b1c8d90d154086582f50def2b09eb21754",
+    "leanchecker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "log_sanitization": "Absolute local paths replaced with <PROJECT>, <AUDIT> or <USER_HOME>; hashes above describe the published bytes."
+}
